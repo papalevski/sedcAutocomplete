@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/jquery-ui.min.css" />
+    
+</head>
+<body>
+    
+    <input type="text" id="wiki"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jqueryui/jquery-ui.min.js"></script>
+    <script src="bower_components/SedcAutocomplete/sedcAutocomplete.js"></script>
+     
+    <script>
+    $(document).ready(function () {
+        $("#wiki").sedcAutocomplete();
+    });
+    </script>
+</body>
+</html>
