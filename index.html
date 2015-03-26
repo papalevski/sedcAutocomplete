@@ -9,7 +9,12 @@
 </head>
 <body>
     
-    <input type="text" id="wiki"/>
+    <!--<input type="text" id="wiki"/>-->
+    <input type="text" id="wiki" data-results-panel-id="results"/>
+
+    <div id="results">
+
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jqueryui/jquery-ui.min.js"></script>
@@ -17,7 +22,9 @@
      
     <script>
     $(document).ready(function () {
-        $("#wiki").sedcAutocomplete();
+        $("#wiki").sedcAutocompleteWithoutJqueryUI();
+
+        //$("#wiki").sedcAutocomplete();
     });
     </script>
 </body>
